@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/OutlinedRoundBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Seller's name"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:endIconMode="clear_text"
+        app:hintTextAppearance="@style/TextLabel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/seller_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Marn Resturant"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/OutlinedRoundBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Seller's VAT Number"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:endIconMode="clear_text"
+        app:hintTextAppearance="@style/TextLabel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tax_number_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1234567890"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/OutlinedRoundBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Invoide Date/Time"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:endIconMode="clear_text"
+        app:hintTextAppearance="@style/TextLabel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_time_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="22/11/2021 03:00 am"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/OutlinedRoundBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Invoice Total(with VAT)"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:endIconMode="clear_text"
+        app:hintTextAppearance="@style/TextLabel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/total_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="100"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/OutlinedRoundBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="VAT Total"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:endIconMode="clear_text"
+        app:hintTextAppearance="@style/TextLabel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vat_amount_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="15"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Convert"></Button>
+
+</LinearLayout>

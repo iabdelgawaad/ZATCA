@@ -1,0 +1,16 @@
+<resources>
+    <style name="OutlinedRoundBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusBottomEnd">5dp</item>
+        <item name="boxCornerRadiusBottomStart">5dp</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="boxStrokeColor">#d9dde1</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">#61000000</item>
+    </style>
+
+</resources>
