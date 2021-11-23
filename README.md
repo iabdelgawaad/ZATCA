@@ -2,7 +2,11 @@
 QR-Code implementation for the e-invoicing (Fatoora)
 https://zatca.gov.sa/ar/E-Invoicing/Introduction/Pages/What-is-e-invoicing.aspx
 
+  - Enter seller information 
+<img src="https://github.com/iabdelgawaad/QR-Cod-Zatca/blob/main/zatca_merchant_data.png" width="400" height="800">
 
+  - Base64 and QR Generated 
+<img src="https://github.com/iabdelgawaad/QR-Cod-Zatca/blob/main/zatca_qr_code_and_base64.png" width="400" height="800">
 
 # Know How
 
@@ -46,3 +50,8 @@ Finally, render QR code (you can pass Bitmap to your ImageView)
 ```  
 showBottomSheet(builder.getBase64())
 ```
+
+# Testing 
+
+- Download this app to validate is your QR code is meet [Zatca](https://zatca.gov.sa/) requirements or not: 
+[E-Invoice QR Reader KSA قارئ الفاتورة الالكترونية](https://play.google.com/store/apps/details?id=com.posbankbh.einvoiceqrreader)
