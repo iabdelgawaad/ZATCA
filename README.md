@@ -43,14 +43,19 @@ Step 2. use class Builder to add your merchant data like below:
 
 
 ```java
-builder.sellerName(sellerNameEditText?.text?.toString())
-                .taxNumber(taxNumberEditText?.text?.toString())
-                .invoiceDate(dateTimeEditText?.text?.toString())
-                .totalAmount(totalAmountWithVatEditText?.text?.toString())
-                .taxAmount(vatAmountEditText?.text?.toString())
+builder.sellerName(sellerNameEditText?.text?.toString()) // Shawrma House
+                .taxNumber(taxNumberEditText?.text?.toString()) // 1234567890
+                .invoiceDate(dateTimeEditText?.text?.toString()) //..> 22/11/2021 03:00 am
+                .totalAmount(totalAmountWithVatEditText?.text?.toString()) // 100
+                .taxAmount(vatAmountEditText?.text?.toString()) // 15
+```
+Output Base64 = 
+
+```java 
+AQ1TaGF3cm1hIEhvdXNlAgoxMjM0NTY3ODkwAxMyMi8xMS8yMDIxIDAzOjAwIGFtBAMxMDAFAjE1
 ```
 
-Finally, render QR code (you can pass Bitmap to your ImageView)
+Finally, you can convert Base64 string to Bitmap then render QR code image (you can pass Bitmap to your ImageView)
 
 ```java  
 showBottomSheet(builder.getBase64())
