@@ -37,7 +37,7 @@ Step 1. Add ZatcaQRCodeGeneration class to your project
 Step 2. use class Builder to add your merchant data like below: 
 
 
-```javakot 
+```java
 builder.sellerName(sellerNameEditText?.text?.toString())
                 .taxNumber(taxNumberEditText?.text?.toString())
                 .invoiceDate(dateTimeEditText?.text?.toString())
