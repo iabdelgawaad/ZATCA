@@ -1,5 +1,10 @@
-# Zatca-QR-Code-Base64-Generation
-QR-Code implementation for the e-invoicing (Fatoora)
+  <div id="top"></div>
+<div align="center"> 
+  <h1 align="center">ZATCA (Fatoora) QR-Code Implementation</h1>
+  QR-Code implementation for the e-invoicing (Fatoora)
+  </p>
+</div>
+
 [Zatca-Fatoora](https://zatca.gov.sa/ar/E-Invoicing/Introduction/Pages/What-is-e-invoicing.aspx)
 
   - Enter seller information 
@@ -27,7 +32,7 @@ Then do same for the 5 tags and Convert to base64 code:
  return Base64.encodeToString(tlvs, Base64.DEFAULT)
 ```
 
-Finally, Genearte the QR-code.
+Finally, Genearte the QR-cod from String using [Zxing](https://github.com/journeyapps/zxing-android-embedded) 
 
 # Usage
 
