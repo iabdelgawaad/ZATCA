@@ -16,13 +16,13 @@ Using TLV to start generating the QR code.
 
 By Creating a TLV Byte Array for each tag like this: 
 
-```
+```java
  tlv1 = byteArrayOf(tag.toByte(), length.toByte()).plus(value.toByteArray())
 ```
 
 Then do same for the 5 tags and Convert to base64 code:
 
-```
+```java
  var tlvs = tlv1 + tlv2 + tlv3 + tlv4 + tlv5
  return Base64.encodeToString(tlvs, Base64.DEFAULT)
 ```
@@ -37,7 +37,7 @@ Step 1. Add ZatcaQRCodeGeneration class to your project
 Step 2. use class Builder to add your merchant data like below: 
 
 
-```  
+```javakot 
 builder.sellerName(sellerNameEditText?.text?.toString())
                 .taxNumber(taxNumberEditText?.text?.toString())
                 .invoiceDate(dateTimeEditText?.text?.toString())
@@ -47,7 +47,7 @@ builder.sellerName(sellerNameEditText?.text?.toString())
 
 Finally, render QR code (you can pass Bitmap to your ImageView)
 
-```  
+```java  
 showBottomSheet(builder.getBase64())
 ```
 
