@@ -17,7 +17,9 @@
 
 In this repo, we will demonstrate how to simply implement a QR code for the ZATCA (Fatoora). For this, the following steps will be explored:
 
-Using TLV to start generating the QR code.
+Using TLV to start generating the QR code:
+
+<img src="https://github.com/iabdelgawaad/ZATCA/blob/main/tags.png" width="1000" height="400">
 
 Example: seller name is "Shawrma"
 
