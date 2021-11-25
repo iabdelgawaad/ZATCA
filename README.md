@@ -21,11 +21,11 @@ Using TLV to start generating the QR code:
 
 <img src="https://github.com/iabdelgawaad/ZATCA/blob/main/tags.png" width="1000" height="400">
 
-Example: seller name is "Shawrma"
+Example: seller name is "Shawrma House"
 
 - tag = 1
-- length = "Shawrma".length 
-- value = "Shawrma"
+- length = "Shawrma House".length 
+- value = "Shawrma House"
 
 By Creating a TLV Byte Array for each tag like this: 
 
