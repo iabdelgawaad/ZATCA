@@ -19,6 +19,12 @@ In this repo, we will demonstrate how to simply implement a QR code for the ZATC
 
 Using TLV to start generating the QR code.
 
+Example: seller name is "Shawrma"
+
+- tag = 1
+- length = "Shawrma".length 
+- value = "Shawrma"
+
 By Creating a TLV Byte Array for each tag like this: 
 
 ```java
