@@ -1,6 +1,6 @@
   <div id="top"></div>
 <div align="center"> 
-  <h1 align="center">Kotlin Andriod - ZATCA (Fatoora) QR-Code Implementation</h1>
+  <h1 align="center">Kotlin - ZATCA (Fatoora) QR-Code Implementation</h1>
   QR-Code implementation for the e-invoicing (Fatoora)
   </p>
 </div>
