@@ -27,10 +27,10 @@ Example: seller name is "Shawrma House"
 - length = "Shawrma House".length 
 - value = "Shawrma House"
 
-By Creating a TLV Byte Array for each tag like this: 
+By Creating a TLV Byte Array for field like this: 
 
 ```java
- tlv1 = byteArrayOf(tag.toByte(), length.toByte()).plus(value.toByteArray())
+ tlv1 = byteArrayOf(tag.toByte(), value.length.toByte()).plus(value.toByteArray())
 ```
 
 Then do same for the 5 tags and Convert to base64 code:
