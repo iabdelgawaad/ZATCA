@@ -30,7 +30,7 @@ Example: seller name is "Shawrma House"
 By Creating a TLV Byte Array for field like this: 
 
 ```java
- tlv1 = byteArrayOf(tag.toByte(), length.toByte()).plus(value.toByteArray())
+ tlv1 = byteArrayOf(tag_seller_name.toByte(), length_seller_name.toByte()).plus(value_seller_name.toByteArray())
 ```
 
 Then do same for the 5 tags and Convert to base64 code:
