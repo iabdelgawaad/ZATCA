@@ -23,9 +23,9 @@ Using TLV to start generating the QR code:
 
 Example: seller name is "Shawrma House"
 
-- tag = 1
-- length = "Shawrma House".length 
-- value = "Shawrma House"
+- tag_seller_name = "1"
+- length_seller_name = "Shawrma House"?.toByteArray()?.size?.toString()
+- value_seller_name = "Shawrma House"
 
 By Creating a TLV Byte Array for field like this: 
 
