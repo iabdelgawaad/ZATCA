@@ -58,31 +58,31 @@ class ZatcaQRCodeGeneration {
 
             val tlv1 = convertTagsAndLengthToHexValues(
                 SELLER_NAME_TAG,
-                sellerName.length.toString(),
+                sellerName?.toByteArray()?.size.toString(),
                 sellerName
             )
 
             val tlv2 = convertTagsAndLengthToHexValues(
                 TAX_NUMBER_TAG,
-                taxNumber.length.toString(),
+                taxNumber?.toByteArray()?.size.toString(),
                 taxNumber
             )
 
             val tlv3 = convertTagsAndLengthToHexValues(
                 INVOICE_DATE_TAG,
-                invoiceDate.length.toString(),
+                invoiceDate?.toByteArray()?.size.toString(),
                 invoiceDate
             )
 
             val tlv4 = convertTagsAndLengthToHexValues(
                 TOTAL_AMOUNT_TAG,
-                totalAmount.length.toString(),
+                totalAmount?.toByteArray()?.size.toString(),
                 totalAmount
             )
 
             val tlv5 = convertTagsAndLengthToHexValues(
                 TAX_AMOUNT_TAG,
-                taxAmount.length.toString(),
+                taxAmount?.toByteArray()?.size.toString(),
                 taxAmount
             )
 
