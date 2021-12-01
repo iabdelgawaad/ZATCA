@@ -1,6 +1,6 @@
   <div id="top"></div>
 <div align="center"> 
-  <h1 align="center">Kotlin - ZATCA (Fatoora) QR-Code Implementation</h1>
+  <h1 align="center">(Kotlin & Java)- ZATCA (Fatoora) QR-Code Implementation</h1>
   QR-Code implementation for the e-invoicing (Fatoora)
   </p>
 </div>
@@ -96,7 +96,6 @@ You can also simply open an issue with the tag "enhancement". Don't forget to gi
 
 ## Credits
 
-- [Salla](https://github.com/sallaApp)
 - [All Contributors](../../contributors)
 
 
