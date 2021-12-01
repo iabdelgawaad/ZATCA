@@ -8,22 +8,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.zatca_qr_generation.blacksoft.QRBarcodeEncoder
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.zxing.BarcodeFormat
 import com.journeyapps.barcodescanner.BarcodeEncoder
-import com.example.zatca_qr_generation.blacksoft.InvoiceTaxAmount
-
-import com.example.zatca_qr_generation.blacksoft.InvoiceTotalAmount
-
-import com.example.zatca_qr_generation.blacksoft.InvoiceDate
-
-import com.example.zatca_qr_generation.blacksoft.TaxNumber
-
-import com.example.zatca_qr_generation.blacksoft.Seller
-
-
-
 
 
 class MainActivity : AppCompatActivity() {
