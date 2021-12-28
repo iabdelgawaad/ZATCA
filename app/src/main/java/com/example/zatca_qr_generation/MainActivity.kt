@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.zatca_qr_generation.java_package.*
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.zxing.BarcodeFormat
 import com.journeyapps.barcodescanner.BarcodeEncoder
@@ -33,17 +34,17 @@ class MainActivity : AppCompatActivity() {
 //            .taxAmount("15.00")
 //        base64TextView.text = builder.getBase64()
 
-        convertButton?.setOnClickListener {
-            val builder = ZatcaQRCodeGeneration.Builder()
-            builder.sellerName(sellerNameEditText?.text?.toString())
-                .taxNumber(taxNumberEditText?.text?.toString())
-                .invoiceDate(dateTimeEditText?.text?.toString())
-                .totalAmount(totalAmountWithVatEditText?.text?.toString())
-                .taxAmount(vatAmountEditText?.text?.toString())
-            showBottomSheet(builder.getBase64())
-        }
+//        convertButton?.setOnClickListener {
+//            val builder = ZatcaQRCodeGeneration.Builder()
+//            builder.sellerName(sellerNameEditText?.text?.toString())
+//                .taxNumber(taxNumberEditText?.text?.toString())
+//                .invoiceDate(dateTimeEditText?.text?.toString())
+//                .totalAmount(totalAmountWithVatEditText?.text?.toString())
+//                .taxAmount(vatAmountEditText?.text?.toString())
+//            showBottomSheet(builder.getBase64())
+//        }
 
-      /*  convertButton?.setOnClickListener{
+        convertButton?.setOnClickListener{
             val qrBarcodeHash = QRBarcodeEncoder.encode(
                 Seller("ديليت"),
                 TaxNumber(""),
@@ -52,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 InvoiceTaxAmount("0.30")
             )
             showBottomSheet(qrBarcodeHash)
-        }*/
+        }
     }
 
     private fun showBottomSheet(base64: String) {
