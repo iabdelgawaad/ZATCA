@@ -95,12 +95,10 @@ You can also simply open an issue with the tag "enhancement". Don't forget to gi
 
 
 ## Credits
-
 - [All Contributors](../../contributors)
 
 
 ## License
-
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
