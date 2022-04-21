@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.zatca_qr_generation.java_package.*
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.zxing.BarcodeFormat
 import com.journeyapps.barcodescanner.BarcodeEncoder
@@ -26,33 +25,15 @@ class MainActivity : AppCompatActivity() {
         var vatAmountEditText = findViewById<TextView>(R.id.vat_amount_edit)
         var convertButton = findViewById<TextView>(R.id.convert_button)
 
-//        val builder = ZatcaQRCodeGeneration.Builder()
-//        builder.sellerName("Marn Retail")
-//            .taxNumber("1234567891")
-//            .invoiceDate("2021-11-22T14:25:09Z")
-//            .totalAmount("100.00")
-//            .taxAmount("15.00")
-//        base64TextView.text = builder.getBase64()
-
-//        convertButton?.setOnClickListener {
-//            val builder = ZatcaQRCodeGeneration.Builder()
-//            builder.sellerName(sellerNameEditText?.text?.toString())
-//                .taxNumber(taxNumberEditText?.text?.toString())
-//                .invoiceDate(dateTimeEditText?.text?.toString())
-//                .totalAmount(totalAmountWithVatEditText?.text?.toString())
-//                .taxAmount(vatAmountEditText?.text?.toString())
-//            showBottomSheet(builder.getBase64())
-//        }
-
-        convertButton?.setOnClickListener{
-            val qrBarcodeHash = QRBarcodeEncoder.encode(
-                Seller("ديليت"),
-                TaxNumber(""),
-                InvoiceDate("2021-11-18T18:40:34+03:00"),
-                InvoiceTotalAmount("2.30"),
-                InvoiceTaxAmount("0.30")
-            )
-            showBottomSheet(qrBarcodeHash)
+        dateTimeEditText?.text = DateUtil.getCurrentDate()
+        convertButton?.setOnClickListener {
+            val builder = ZatcaQRCodeGeneration.Builder()
+            builder.sellerName(sellerNameEditText?.text?.toString())
+                .taxNumber(taxNumberEditText?.text?.toString())
+                .invoiceDate(dateTimeEditText?.text?.toString())
+                .totalAmount(totalAmountWithVatEditText?.text?.toString())
+                .taxAmount(vatAmountEditText?.text?.toString())
+            showBottomSheet(builder.getBase64())
         }
     }
 
@@ -100,4 +81,5 @@ class MainActivity : AppCompatActivity() {
         } catch (e: Exception) {
         }
     }
+
 }

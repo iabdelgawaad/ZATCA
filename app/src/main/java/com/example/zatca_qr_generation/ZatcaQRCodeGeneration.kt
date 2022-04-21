@@ -87,7 +87,8 @@ class ZatcaQRCodeGeneration {
             )
 
             var tlvs = tlv1 + tlv2 + tlv3 + tlv4 + tlv5
-            return Base64.encodeToString(tlvs, Base64.DEFAULT)
+            var text = Base64.encodeToString(tlvs, Base64.DEFAULT)
+            return text.replace("\n", "")
         }
     }
 }
