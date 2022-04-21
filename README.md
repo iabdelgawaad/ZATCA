@@ -37,7 +37,8 @@ Then do same for the 5 tags and Convert to base64 code:
 
 ```java
  var tlvs = tlv1 + tlv2 + tlv3 + tlv4 + tlv5
- return Base64.encodeToString(tlvs, Base64.DEFAULT)
+   var text = Base64.encodeToString(tlvs, Base64.DEFAULT)
+            return text.replace("\n", "")
 ```
 
 Finally, Genearte the QR-cod from String using [Zxing](https://github.com/journeyapps/zxing-android-embedded) 
@@ -53,7 +54,7 @@ Step 2. use class Builder to add your merchant data like below:
 ```java
 builder.sellerName(sellerNameEditText?.text?.toString()) // Shawrma House
                 .taxNumber(taxNumberEditText?.text?.toString()) // 1234567890
-                .invoiceDate(dateTimeEditText?.text?.toString()) //..> 22/11/2021 03:00 am
+                .invoiceDate(dateTimeEditText?.text?.toString()) //..> date format recommended to be with this format "yyyy-MM-dd HH:mm:ss"
                 .totalAmount(totalAmountWithVatEditText?.text?.toString()) // 100
                 .taxAmount(vatAmountEditText?.text?.toString()) // 15
 ```
@@ -71,8 +72,8 @@ showBottomSheet(builder.getBase64())
 
 # Testing 
 
-- Download this app to validate is your QR code is meet [Zatca](https://zatca.gov.sa/) requirements or not: 
-[E-Invoice QR Reader KSA قارئ الفاتورة الالكترونية](https://play.google.com/store/apps/details?id=com.posbankbh.einvoiceqrreader)
+- Download this app to validate is your QR code match [Zatca](https://zatca.gov.sa/) requirements or not: 
+[الفاتورة الالكترونية](https://play.google.com/store/apps/details?id=com.elshazlygroup.invoice)
 
  - Sample of QR Reader 
 <img src="https://github.com/iabdelgawaad/QR-Cod-Zatca/blob/main/zatca_validation_qr.jpg" width="400" height="800">
