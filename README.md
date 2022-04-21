@@ -72,8 +72,8 @@ showBottomSheet(builder.getBase64())
 
 # Testing 
 
-- Download this app to validate is your QR code is meet [Zatca](https://zatca.gov.sa/) requirements or not: 
-[E-Invoice QR Reader KSA قارئ الفاتورة الالكترونية](https://play.google.com/store/apps/details?id=com.posbankbh.einvoiceqrreader)
+- Download this app to validate is your QR code match [Zatca](https://zatca.gov.sa/) requirements or not: 
+[الفاتورة الالكترونية](https://play.google.com/store/apps/details?id=com.elshazlygroup.invoice)
 
  - Sample of QR Reader 
 <img src="https://github.com/iabdelgawaad/QR-Cod-Zatca/blob/main/zatca_validation_qr.jpg" width="400" height="800">
