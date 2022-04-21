@@ -8,10 +8,10 @@
 [Zatca-Fatoora](https://zatca.gov.sa/ar/E-Invoicing/Introduction/Pages/What-is-e-invoicing.aspx)
 
   - Enter seller information 
-<img src="https://github.com/iabdelgawaad/QR-Cod-Zatca/blob/main/zatca_merchant_data.png" width="400" height="800">
+<img src="https://github.com/iabdelgawaad/ZATCA/blob/main/Screenshot_20220421_133111.png" width="400" height="800">
 
   - Base64 and QR Generated 
-<img src="https://github.com/iabdelgawaad/QR-Cod-Zatca/blob/main/zatca_qr_code_and_base64.png" width="400" height="800">
+<img src="https://github.com/iabdelgawaad/ZATCA/blob/main/Screenshot_20220421_132708.png" width="400" height="800">
 
 # How QR Generated
 
@@ -76,7 +76,7 @@ showBottomSheet(builder.getBase64())
 [الفاتورة الالكترونية](https://play.google.com/store/apps/details?id=com.elshazlygroup.invoice)
 
  - Sample of QR Reader 
-<img src="https://github.com/iabdelgawaad/QR-Cod-Zatca/blob/main/zatca_validation_qr.jpg" width="400" height="800">
+<img src="https://github.com/iabdelgawaad/ZATCA/blob/main/vat_app_text.jpg" width="400" height="800">
 
 ## Contributing
 
